@@ -10,7 +10,7 @@ import person_png from '../../assests/person.png'
 import dot_png from '../../assests/dot.png'
 import close_png from '../../assests/close.png'
 import { useState } from 'react'
-import SideBar from '../Sidebar/SideBar'
+
 
 const Navbar = ({setSideBar}) => {
 
@@ -33,7 +33,7 @@ const Navbar = ({setSideBar}) => {
               <img src={yt_png} alt="" />
           </div>
           <div className='yt__navbar-middle'>
-              <input type="text" name="" id="" />
+              <input type="text" name=""/>
               <img src={search_png} alt="" />
           </div>
           <div className='yt__navbar-middle_second'>

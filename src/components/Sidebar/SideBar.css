@@ -3,11 +3,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    height: 100vh;
-    background-color: var(--color-grey);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.914);
     width: 13rem;
-    position: fixed;
     padding: 2rem; 
+    position: fixed;
+    margin-top: 4.5rem;
 }
 
 .yt__sidebar-side{
@@ -25,6 +26,7 @@
     flex-direction: row;
     column-gap: 2rem;
     color: rgba(255, 255, 255, 0.611);
+    cursor: pointer;
 }
 
 .yt__sidebar-side_links img{
