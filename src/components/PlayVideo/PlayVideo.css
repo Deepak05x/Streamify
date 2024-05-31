@@ -3,6 +3,7 @@
     flex-basis: 69%;
     padding: 0 2rem;
     margin-top: 7rem;
+    flex-wrap: wrap;
 }
 
 .yt__playvideo video{
@@ -25,6 +26,10 @@
     font-size: 14px;
 }
 
+.yt__playvideo-info p{
+    color: var(--color-lightgrey);
+}
+
 .yt__playvideo-info img{
     width: 20px;
     margin-right: 0.5rem;
@@ -34,7 +39,8 @@
     display: inline-flex;
     align-items: center;
     flex-direction: row;
-    margin-right: 1rem;    
+    margin-right: 1rem; 
+    color: var(--color-lightgrey);   
 }
 
 .yt__playvideo hr{
@@ -42,4 +48,108 @@
     height: 1px;
     background: var(--color-grey);
     margin: 0.8rem 0;
+}
+
+.yt__playvideo-publisher{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.yt__playvideo-publisher div{
+    flex: 1;
+    line-height: 1.5rem;
+}
+
+.yt__playvideo-publisher img{
+    border-radius: 50%;
+    width: 55px;
+    margin-right: 1.5rem;
+}
+
+.yt__playvideo-publisher button{
+    width: 120px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    outline: none;
+    border: 1px solid var(--color-black);
+    color: white;
+}
+
+.yt__playvideo-publisher div p{
+    color: var(--color-white);
+    font-weight: 800;
+}
+
+.yt__playvideo-publisher div span{
+    color: rgb(174, 163, 163);
+}
+
+.yt__video-description{
+    margin-top: 2rem;
+}
+
+
+.yt__video-description p{
+    font-size: 14px;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+
+.yt__video-description h4{
+    font-size: 14px;
+    color: var(--color-lightgrey);
+    margin-top: 1rem;
+}
+
+.yt__video-description_comment{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding-left: 1rem;
+}
+
+.yt__video-description_comment img{
+    width: 35px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    padding-top: 0.5rem;
+}
+
+.yt__video-description_comment h3{
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+
+.yt__video-description_comment span{
+    font-size: 10px;
+    color: var(--color-lightgrey);
+    margin-left: 0.5rem;
+}
+
+.yt__video-description_comment div p{
+    font-weight: 300;
+}
+
+.yt__video-description_comment-action{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.yt__video-description_comment-action img{
+    border-radius: 0;
+    width: 20px;
+    margin-right: 0rem;
+}
+
+.yt__video-description_comment-action span{
+    margin-right: 1rem;
+    font-size: 12px;
+    padding-top: 0.8rem;
 }

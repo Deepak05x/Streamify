@@ -7,6 +7,7 @@ const Video = () => {
   return (
     <div className='yt__video-container'>
         <PlayVideo />
+       
     </div>
   )
 }

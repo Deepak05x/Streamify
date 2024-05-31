@@ -22,5 +22,6 @@ img{
 :root{
     --color-grey : #303030;
     --color-black : #0f0f0f;
-    --color-white : rgba(255, 255, 255, 0.821)
+    --color-white : rgba(255, 255, 255, 0.821);
+    --color-lightgrey : rgb(174, 163, 163);
 }
