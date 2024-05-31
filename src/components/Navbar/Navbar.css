@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.914);
+    background-color: var(--color-black);
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -65,11 +65,11 @@
     padding: 0.4rem 0.2rem;
     padding-left: 2rem;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: var(--color-black);
 }
 
 .yt__navbar-middle input{
-    background-color: rgba(0, 0, 0, 0.625);
+    background-color: var(--color-black);
     outline: none;
     border: none;
     color: white;

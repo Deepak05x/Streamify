@@ -1,0 +1,45 @@
+.yt__playvideo{
+    color: var(--color-white);
+    flex-basis: 69%;
+    padding: 0 2rem;
+    margin-top: 7rem;
+}
+
+.yt__playvideo video{
+    width: 100%;
+}
+
+.yt__playvideo h3{
+    margin-top: 0.7rem;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.yt__playvideo-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5rem;
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.yt__playvideo-info img{
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.yt__playvideo-info_social span{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 1rem;    
+}
+
+.yt__playvideo hr{
+    border: 0;
+    height: 1px;
+    background: var(--color-grey);
+    margin: 0.8rem 0;
+}

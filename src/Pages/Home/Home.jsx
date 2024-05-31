@@ -7,7 +7,10 @@ const Home = ({sideBar}) => {
   return (
     <>
       <SideBar sideBar={sideBar} />
-      <Feed />
+      <div className={`yt__container ${sideBar ? ' ' : " yt__large-container"}`}>
+        <Feed />
+      </div>
+      
     </>
   )
 }
