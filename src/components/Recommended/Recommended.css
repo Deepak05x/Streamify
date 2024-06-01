@@ -1,0 +1,45 @@
+.yt__recommended{
+    flex-basis: 30%;
+    color: var(--color-white);
+}
+
+.yt__recommended div:first-child{
+    width: 80%;
+    margin-bottom: 2rem;
+    height: 1px;
+    background-color: var(--color-lightgrey)
+}
+
+
+.yt__recommended-list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+
+.yt__recommended-list img{
+    width: 50%;
+    flex-basis: 49%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+
+.yt__recommended-list_info{
+    flex-basis: 49%;
+}
+
+.yt__recommended-list_info h4{
+    font-size: 15px;
+    margin-bottom: 0.8rem;
+}
+
+.yt__recommended-list_info p{
+    color: var(--color-lightgrey);
+    font-size: 15px;
+}
+
+.yt__recommended-list_info p:last-child{
+    font-size: 12px;
+    margin-top: 0.4rem;
+}

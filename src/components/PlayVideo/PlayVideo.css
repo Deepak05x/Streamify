@@ -2,12 +2,13 @@
     color: var(--color-white);
     flex-basis: 69%;
     padding: 0 2rem;
-    margin-top: 7rem;
     flex-wrap: wrap;
+   
 }
 
 .yt__playvideo video{
     width: 100%;
+    border-radius: 5px;
 }
 
 .yt__playvideo h3{

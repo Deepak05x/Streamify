@@ -10,6 +10,7 @@ import person_png from '../../assests/person.png'
 import dot_png from '../../assests/dot.png'
 import close_png from '../../assests/close.png'
 import { useState } from 'react'
+import {Link } from 'react-router-dom'
 
 
 const Navbar = ({setSideBar}) => {
@@ -30,7 +31,9 @@ const Navbar = ({setSideBar}) => {
           <>
           <div className='yt__navbar-left'>
               <img src={menu_png} alt="" onClick={()=>handleSideBar()}/>
-              <img src={yt_png} alt="" />
+              <Link to={'/'}>
+                <img src={yt_png} alt="" />
+              </Link>
           </div>
           <div className='yt__navbar-middle'>
               <input type="text" name=""/>

@@ -1,8 +1,9 @@
 .yt__video-container{
     background: var(--color-black);
-    padding: 20px 2% 20px 2%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 7rem;
+    padding: 1rem 5rem;
 }
