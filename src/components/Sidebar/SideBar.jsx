@@ -61,6 +61,18 @@ const SideBar = ({sideBar, category, setCategory}) => {
             <img src={pew} alt="" />
             <p>PewDiePie</p>
         </div>
+        <div className='yt__sidebar-sub_links'>
+            <img src={pew} alt="" />
+            <p>PewDiePie</p>
+        </div>
+        <div className='yt__sidebar-sub_links'>
+            <img src={pew} alt="" />
+            <p>PewDiePie</p>
+        </div>
+        <div className='yt__sidebar-sub_links'>
+            <img src={pew} alt="" />
+            <p>PewDiePie</p>
+        </div>
       </div>
     </div>
   )

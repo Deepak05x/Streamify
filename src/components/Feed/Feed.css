@@ -1,17 +1,20 @@
 .yt__feed{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(270px, 1fr));
     column-gap: 1rem;
     row-gap: 5rem;
     background-color: var(--color-black);
-    overflow-x: hidden;    
-    margin-top: 2rem;
 }
 
 .yt__feed-card img{
     width: 100%;
     border-radius: 5px;
 }
+
+.yt__feed-card{
+    background-color: var(--color-black);
+}
+
 
 .yt__feed-card h2{
     color: rgba(255, 255, 255, 0.821);
