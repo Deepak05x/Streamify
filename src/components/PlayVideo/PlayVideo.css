@@ -6,7 +6,8 @@
    
 }
 
-.yt__playvideo video{
+.yt__playvideo iframe{
+    height: 37vw;
     width: 100%;
     border-radius: 5px;
 }
@@ -111,14 +112,14 @@
     display: flex;
     align-items: flex-start;
     margin-top: 2rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .yt__video-description_comment img{
     width: 35px;
     margin-right: 1rem;
     border-radius: 50%;
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .yt__video-description_comment h3{
@@ -134,7 +135,8 @@
 }
 
 .yt__video-description_comment div p{
-    font-weight: 300;
+    font-weight: 400;
+    word-spacing: 0.05rem;
 }
 
 .yt__video-description_comment-action{
@@ -153,4 +155,12 @@
     margin-right: 1rem;
     font-size: 12px;
     padding-top: 0.8rem;
+}
+
+.yt__video-descrption_truncate{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
