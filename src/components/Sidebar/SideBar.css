@@ -3,7 +3,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     background-color: var(--color-black);
     width: 13rem;
     padding: 2rem; 

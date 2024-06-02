@@ -32,11 +32,11 @@ const Navbar = ({setSideBar}) => {
           <div className='yt__navbar-left'>
               <img src={menu_png} alt="" onClick={()=>handleSideBar()}/>
               <Link to={'/'}>
-                <img src={yt_png} alt="" />
+                <span><img src={yt_png} alt="" /><h4>StreamifY</h4></span>
               </Link>
           </div>
           <div className='yt__navbar-middle'>
-              <input type="text" name=""/>
+              <input type="text" name="" placeholder='Search..'/>
               <img src={search_png} alt="" />
           </div>
           <div className='yt__navbar-middle_second'>

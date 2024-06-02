@@ -13,7 +13,7 @@ const Video = () => {
   return (
     <div className='yt__video-container'>
         <PlayVideo videoId={videoId} categoryId={categoryId}/>
-        <Recommended />
+        <Recommended categoryId={categoryId}/>
     </div>
   )
 }

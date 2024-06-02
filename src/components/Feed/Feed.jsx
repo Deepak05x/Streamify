@@ -11,7 +11,7 @@ const Feed = ({category}) => {
     const [data, setData] = useState([])
     const fetchData = async ()=>{
         const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
-        const videoList_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxHeight=180&maxResults=50&maxWidth=250&regionCode=IN&videoCategoryId=${category}&key=${API_KEY}`
+        const videoList_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&videoCategoryId=${category}&key=${API_KEY}`
         const response = await axios.get(videoList_url)
         const data = response.data.items
         setData(data)

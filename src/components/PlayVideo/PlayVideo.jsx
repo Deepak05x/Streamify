@@ -135,9 +135,7 @@ const PlayVideo = ({videoId}) => {
                     </div>
                 </div>
               </div>
-            ))}
-            
-           
+            ))}       
         </div>
     </div>
   )

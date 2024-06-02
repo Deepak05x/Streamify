@@ -18,7 +18,7 @@
     justify-content: space-between;
     flex-direction: row;
     column-gap: 2rem;
-    border: 1px solid  rgba(255, 255, 255, 0.466);
+    border: 2.5px solid  rgba(255, 255, 255, 0.466);
     width: 100%;
     background-color: rgba(0, 0, 0, 0.914);
     padding: 0.5rem;
@@ -33,7 +33,7 @@
     background-color: rgba(0, 0, 0, 0.914);
     color: white;
     width: 100%;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
 }
 
@@ -41,6 +41,7 @@
 .yt__navbar-search img{
     width: 25px;
     height: 25px;
+    margin-left: 2rem;
 }
 
 .yt__navbar-left{
@@ -51,9 +52,25 @@
     column-gap: 1rem;
 }
 
+.yt__navbar-left span{
+    display: flex;
+    column-gap: 0.2rem;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+.yt__navbar-left span h4{
+    background: linear-gradient(90deg, #C40C0C, #FF6500, #FFC100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .yt__navbar-left img{
     width: 30px;
     height: 30px;
+    margin-top: 2px;
 }
 
 .yt__navbar-middle{
@@ -61,7 +78,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    border: 1px solid rgba(255, 255, 255, 0.466);
+    border: 2px solid rgba(255, 255, 255, 0.466);
     border-radius: 20px;
     width: 450px;
     padding: 0.4rem 0.2rem;
@@ -77,7 +94,7 @@
     color: white;
     font-size: 15px;
     flex: 2;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .yt__navbar-middle img{
@@ -107,8 +124,8 @@
     padding: 0.4rem;
     width: 35px;
     height: 35px;
-
 }
+
 
 .yt__navbar-middle_second img{
     width: 20px;
@@ -136,8 +153,13 @@
 
 @media screen and (max-width: 769px){
     .yt__navbar-middle{
-        width: 300px;
+        display: none;
     }
+
+    .yt__navbar-middle_second{
+        display: flex;
+    }
+
 }
 
 @media screen and (max-width: 482px){
@@ -149,17 +171,28 @@
         display: flex;
     }
 
-}
+    .yt__navbar-left span{
+        margin-left: 0;
+    }
 
-@media screen and (max-width: 426px){
+    .yt__navbar-left span h4{
+        font-size: 20px;
+    }
+
+    .yt__navbar-left span img{
+        display: none;
+    }
+
     .yt__navbar-right{
-        column-gap: 0.7rem;
+        column-gap: 0.5rem;
     }
 }
 
+
+
 @media screen and (max-width: 376px){
     .yt__navbar{
-        padding: 1rem 0.5rem;
+        padding: 1rem 2rem;
     }
 }
 
