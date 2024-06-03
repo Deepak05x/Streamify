@@ -1,8 +1,11 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { home, game, automobile, person, blog, news, sports, music, tech, mrbeast, pew, pari } from '../../assests/side'
 import './SideBar.css'
 
 const SideBar = ({sideBar, category, setCategory}) => {
+
+    
 
   return (
     <div className={`yt__sidebar ${

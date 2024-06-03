@@ -2,11 +2,14 @@ import React from 'react'
 import './Home.css'
 import SideBar from '../../components/Sidebar/SideBar'
 import Feed from '../../components/Feed/Feed'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Home = ({sideBar}) => {
 
   const [category, setCategory] = useState(0)
+ 
+ 
+ 
 
   return (
     <>

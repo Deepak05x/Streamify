@@ -27,6 +27,7 @@ const PlayVideo = ({videoId}) => {
         }
     }
 
+
   
 
     const fetchVideoInfo =  async ()=>{
@@ -97,7 +98,7 @@ const PlayVideo = ({videoId}) => {
   return (
     <div className='yt__playvideo'>
         {/* <video src={video} controls autoPlay muted></video> */}
-        <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}  frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h3>{apiData.snippet.title}</h3>
         <div className='yt__playvideo-info'>
             <p>{viewCountFormat(apiData.statistics.viewCount)} views &bull; {moment(apiData.snippet.publishedAt).fromNow()}</p>

@@ -6,3 +6,30 @@
 .yt__large-container{
     padding-left: 8rem;
 }
+
+@media screen and (max-width: 480px){
+    .yt__container{
+        padding-left: 7rem;
+    }
+
+    .yt__navbar-left img{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 376px){
+    .yt__container{
+        padding-left: 6rem;
+        padding-right: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 321px){
+    .yt__container{
+        padding: 5rem;
+        padding-right: 0;
+        padding-left: 3rem;
+    }
+}

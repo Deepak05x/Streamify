@@ -50,12 +50,12 @@ const Recommended = ({categoryId}) => {
   return (
     <div className='yt__recommended'>
         <div></div>
-        <h1>Recommended</h1>
+        <h1 id='heading'>Recommended</h1>
         {recommended.map((item,index)=>{
             return (
             <Link to={`/video/${item.snippet.categoryId}/${item.id}`} className='yt__recommended-list' key={index}>
                 <img src={item.snippet.thumbnails.standard.url} alt="" />
-                <div className='yt__recommended-list_info'>
+                <div className='yt__recommended-list_info' id='list'>
                     <h4>{item.snippet.title}</h4>
                     <p>{item.snippet.channelTitle}</p>
                     <p>{viewCountFormat(item.statistics.viewCount)} Views &nbsp; &bull; &nbsp; {moment(item.snippet.publishedAt).fromNow()}</p>

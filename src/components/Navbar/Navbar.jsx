@@ -13,12 +13,17 @@ import { useState } from 'react'
 import {Link } from 'react-router-dom'
 
 
-const Navbar = ({setSideBar}) => {
+const Navbar = ({setSideBar, sideBar}) => {
 
   const [search, setSearch] = useState(false)
+  const [drop, setDrop] = useState(false)
 
   const handleSearch = ()=>{
     setSearch(!search)
+  }
+
+  const handleDrop = ()=>{
+    setDrop(!drop)
   }
 
   const handleSideBar = ()=>{
@@ -26,7 +31,9 @@ const Navbar = ({setSideBar}) => {
   }
 
   return (
-    <div className='yt__navbar'>
+    <div className={`yt__navbar ${
+      sideBar === true ? 'yt__navbar' : ''
+    }`}>
       {search === false ? (
           <>
           <div className='yt__navbar-left'>
@@ -49,9 +56,15 @@ const Navbar = ({setSideBar}) => {
               <img src={noti_png} alt="" />
               <img src={person_png} alt="" />
           </div>
-          <div className='yt__navbar-right_drop'>
-              <img src={dot_png} alt="" />
-          </div>
+          <div className={`yt__navbar-right_drop ${drop ? 'drop' : ''}`}>
+            <img src={dot_png} alt="" onClick={handleDrop}/>
+            <div className='yt__navbar-right_drop-menu'>
+                <img src={video_png} alt="" />
+                <img src={app_png} alt="" />
+                <img src={noti_png} alt="" />
+                <img src={person_png} alt="" />
+            </div>
+        </div>
           </>
         )
           : (
