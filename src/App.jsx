@@ -3,7 +3,8 @@ import Navbar from './components/Navbar/Navbar'
 import {Routes, Route} from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Video from './Pages/Video/Video'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+
 
 const App = () => {
 

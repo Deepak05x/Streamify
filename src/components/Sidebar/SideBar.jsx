@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { home, game, automobile, person, blog, news, sports, music, tech, mrbeast, pew, pari } from '../../assests/side'
+import { home, game, automobile, person, blog, news, sports, music, tech, mrbeast, pew, pari, thumbnail1, thumbnail2, thumbnail3 } from '../../assests/side'
 import './SideBar.css'
 
 const SideBar = ({sideBar, category, setCategory}) => {
@@ -65,15 +65,15 @@ const SideBar = ({sideBar, category, setCategory}) => {
             <p>PewDiePie</p>
         </div>
         <div className='yt__sidebar-sub_links'>
-            <img src={pew} alt="" />
-            <p>PewDiePie</p>
+            <img src={thumbnail1} alt="" />
+            <p>Trivago  </p>
         </div>
         <div className='yt__sidebar-sub_links'>
-            <img src={pew} alt="" />
-            <p>PewDiePie</p>
+            <img src={thumbnail2} alt="" />
+            <p>Goa</p>
         </div>
         <div className='yt__sidebar-sub_links'>
-            <img src={pew} alt="" />
+            <img src={thumbnail3} alt="" />
             <p>PewDiePie</p>
         </div>
       </div>
