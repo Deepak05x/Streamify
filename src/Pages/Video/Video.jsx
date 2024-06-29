@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom'
 const Video = () => {
 
   const {videoId,categoryId} = useParams()
-
+  
   return (
     <div className='yt__video-container'>
         <PlayVideo videoId={videoId} categoryId={categoryId}/>
